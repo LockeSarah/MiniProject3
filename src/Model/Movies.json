@@ -1,0 +1,74 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "title": "Edge of Justice",
+      "director": "Laura Bennett",
+      "producer": "Jake Reynolds",
+      "category_id": 1
+    },
+    {
+      "id": 2,
+      "title": "Laughter Lane",
+      "director": "Tommy Rivers",
+      "producer": "Angela Kim",
+      "category_id": 2
+    },
+    {
+      "id": 3,
+      "title": "Echoes of Silence",
+      "director": "Maya Daniels",
+      "producer": "Elijah Moore",
+      "category_id": 3
+    },
+    {
+      "id": 4,
+      "title": "Starborn",
+      "director": "Chris Lennox",
+      "producer": "Nina Park",
+      "category_id": 4
+    },
+    {
+      "id": 5,
+      "title": "The Haunting of Willow Creek",
+      "director": "Elena Foster",
+      "producer": "Marcus Green",
+      "category_id": 5
+    },
+    {
+      "id": 6,
+      "title": "Runaway Rush",
+      "director": "Jake Nolan",
+      "producer": "Dana Fields",
+      "category_id": 1
+    },
+    {
+      "id": 7,
+      "title": "Campfire Chronicles",
+      "director": "Nina Brooks",
+      "producer": "Caleb Turner",
+      "category_id": 2
+    },
+    {
+      "id": 8,
+      "title": "Breaking the Ice",
+      "director": "Sophie Chen",
+      "producer": "Leo Vasquez",
+      "category_id": 3
+    },
+    {
+      "id": 9,
+      "title": "Neon Horizon",
+      "director": "Dev Patel",
+      "producer": "Zara Leigh",
+      "category_id": 4
+    },
+    {
+      "id": 10,
+      "title": "Midnight Screams",
+      "director": "Rachel Kent",
+      "producer": "Oliver Nash",
+      "category_id": 5
+    }
+  ]
+}

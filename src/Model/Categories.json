@@ -1,0 +1,24 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "category": "Action"
+    },
+    {
+      "id": 2,
+      "category": "Comedy"
+    },
+    {
+      "id": 3,
+      "category": "Drama"
+    },
+    {
+      "id": 4,
+      "category": "Science Fiction"
+    },
+    {
+      "id": 5,
+      "category": "Horror"
+    }
+  ]
+}

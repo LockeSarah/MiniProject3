@@ -1,0 +1,100 @@
+{
+    "users": [
+    {
+        "id": 0,
+        "name": "Admin",
+        "uname": "admin",
+        "email": "admin@example.com",
+        "password": "test",
+        "role": "admin"
+        },
+        {
+          "id": 1,
+          "name": "User",
+          "uname": "user",
+          "email": "user@example.com",
+          "password": "test",
+          "role": "user"
+          },
+      {
+        "id": 2,
+        "name": "Alice Johnson",
+        "uname": "alicej",
+        "email": "alicej@example.com",
+        "password": "alicejohnson123",
+        "role": "admin"
+      },
+      {
+        "id": 3,
+        "name": "Bob Smith",
+        "uname": "bobsmith",
+        "email": "bobsmith@example.com",
+        "password": "bobsmith123",
+        "role": "user"
+      },
+      {
+        "id": 4,
+        "name": "Charlie Brown",
+        "uname": "charlieb",
+        "email": "charlieb@example.com",
+        "password": "charliebrown123",
+        "role": "user"
+      },
+      {
+        "id": 5,
+        "name": "Diana Prince",
+        "uname": "dianap",
+        "email": "dianap@example.com",
+        "password": "dianaprince123",
+        "role": "admin"
+      },
+      {
+        "id": 6,
+        "name": "Edward Norton",
+        "uname": "ednorton",
+        "email": "ednorton@example.com",
+        "password": "edwardnorton123",
+        "role": "user"
+      },
+      {
+        "id": 7,
+        "name": "Fiona Gallagher",
+        "uname": "fionag",
+        "email": "fionag@example.com",
+        "password": "fionagallagher123",
+        "role": "user"
+      },
+      {
+        "id": 8,
+        "name": "George Costanza",
+        "uname": "georgec",
+        "email": "georgec@example.com",
+        "password": "georgecostanza123",
+        "role": "user"
+      },
+      {
+        "id": 9,
+        "name": "Hannah Montana",
+        "uname": "hannahm",
+        "email": "hannahm@example.com",
+        "password": "hannahmontana123",
+        "role": "admin"
+      },
+      {
+        "id": 10,
+        "name": "Ian Malcolm",
+        "uname": "ianm",
+        "email": "ianm@example.com",
+        "password": "ianmalcolm123",
+        "role": "user"
+      },
+      {
+        "id": 11,
+        "name": "Jessica Jones",
+        "uname": "jessicaj",
+        "email": "jessicaj@example.com",
+        "password": "jessicajones123",
+        "role": "admin"
+      }
+    ]
+  }
