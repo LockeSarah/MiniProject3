@@ -5,15 +5,21 @@ import { GetMovie, DeleteMovie, MovieUpdate } from "../Services/MovieService";
 
 export default function Movies() {
     const { movieList, logStatus } = useContext(DataContext);
-    const [ movie, setMovie ] = useState(movieList);
+    const [ movie, setMovie ] = useState([]);
     // const [ length, setLength ] = useState(movieList.length);
     const [ length, setLength ] = useState(-1);
 
     async function getList() {
-        var list = await GetMovie();
-        setMovie(list);
-        setLength(list.length);
-    };
+        try {
+            var list = await GetMovie();
+            console.log("Fetched Movies:", list); // Debugging: Check if data is fetched
+            setMovie(list);
+            setLength(list.length);
+        } catch (error) {
+            console.error("Error fetching movies:", error); // Log any errors
+            alert("Failed to fetch movies. Please check the backend connection.");
+        }
+    }
 
     useEffect(() => {getList();
         

@@ -2,7 +2,7 @@ import axios from 'axios';
 var host="http://localhost:3000";
 
 async function GetMovie() {
-    const res = await axios.get(host+"/browse/movie",{ headers: {
+    const res = await axios.get(host+"/movie",{ headers: {
         'Content-Type': 'text/html',"Access-Control-Allow-Origin":host,
         "Access-Control-Allow-Headers": "Origin, X-Requested-With"
     }}, { withCredentials: true });
@@ -16,7 +16,7 @@ async function GetMovie() {
 };
 
 async function DeleteMovie(id, setMovie, setLength) {
-    const res = await axios.get(host+"/browse/movie?id"+id,{ headers: {
+    const res = await axios.get(host+"/movie?id"+id,{ headers: {
         'Content-Type': 'text/html',"Access-Control-Allow-Origin":host,
         "Access-Control-Allow-Headers": "Origin, X-Requested-With"
     }}, { withCredentials: true });
@@ -26,7 +26,7 @@ async function DeleteMovie(id, setMovie, setLength) {
 
 async function MovieUpdate(movie) {
     const json = JSON.stringify(movie);
-    const res = await axios.post(host+'/browse/updateMovie', json,{ headers: {
+    const res = await axios.post(host+'/updateMovie', json,{ headers: {
        'Content-Type': 'application/json',"Access-Control-Allow-Origin":host,
        "Access-Control-Allow-Headers": "Origin, X-Requested-With"
     }}, { withCredentials: true });
@@ -35,7 +35,7 @@ async function MovieUpdate(movie) {
 
 async function MovieAdd(movie) {
     const json = JSON.stringify(movie);
-    const res = await axios.post(host+'/browse/addMovie', json,{ headers: {
+    const res = await axios.post(host+'/addMovie', json,{ headers: {
        'Content-Type': 'application/json',"Access-Control-Allow-Origin":host,
        "Access-Control-Allow-Headers": "Origin, X-Requested-With"
     }}, { withCredentials: true });
