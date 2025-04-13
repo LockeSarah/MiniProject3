@@ -8,7 +8,7 @@ async function GetMovie() {
     }}, { withCredentials: true });
     let list=[];
     res.data.rows.map((tmp,index)=>{
-        var book={"id":tmp.id,"title":tmp.title,"director":tmp.director,"producer":tmp.producer,"category_id":tmp.category_id};
+        var movie={"id":tmp.id,"title":tmp.title,"director":tmp.director,"producer":tmp.producer,"category_id":tmp.category_id};
         list.push(movie);
     })
     console.log(list);

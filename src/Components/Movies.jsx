@@ -6,7 +6,8 @@ import { GetMovie, DeleteMovie, MovieUpdate } from "../Services/MovieService";
 export default function Movies() {
     const { movieList, logStatus } = useContext(DataContext);
     const [ movie, setMovie ] = useState(movieList);
-    const [ length, setLength ] = useState(movieList.length);
+    // const [ length, setLength ] = useState(movieList.length);
+    const [ length, setLength ] = useState(-1);
 
     async function getList() {
         var list = await GetMovie();
@@ -20,7 +21,7 @@ export default function Movies() {
 
     async function deleteMovie(e) {
         var ind = e.target.value;
-        await deleteMovie(movie[ind].id, setMovie, setLength);
+        await DeleteMovie(movie[ind].id, setMovie, setLength);
         alert("Movie #" + ind + " Deleted from the Database.");
     };
     async function updateMovie(e) {
@@ -41,6 +42,7 @@ export default function Movies() {
     return (
         <div>
             <h1 className="text-3xl">Future Home of Movies</h1>
+            <h3 className="text-xl">Total Movies: {length}</h3>
             <div id ="tableContainer" className="h-[100vh] px-50 overflow-y-scroll flex justify-center bg-indigo-300">
                 <table className="text-sm">
                     <thead>
