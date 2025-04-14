@@ -11,9 +11,9 @@ export default function MovieAdmin() {
     const [category, setCategory] = useState("");
 
     async function addMovie() {
-        var book = {"title":title, "director":director, "producer":producer, "category_id":category};
+        var movie = {"title":title, "director":director, "producer":producer, "category_id":category};
         await MovieAdd(movie);
-        alert("Movie Added");
+        // alert("Movie Added");
         setDone(1);
     };
 
@@ -24,10 +24,6 @@ export default function MovieAdmin() {
     } else if(sessionStorage.getItem("logValue") == 0 || sessionStorage.getItem("logValue") == 1) {
         return(<Navigate to = "/movies" />);
     } else {
-
-        // if(sessionStorage.getItem("logValue")!=null) {
-        //     setLogged(sessionStorage.getItem("logValue"));
-        // }
 
         return(
             <div className="px-100 py-5 text-center">
@@ -42,20 +38,21 @@ export default function MovieAdmin() {
                         <tr>
                             <td className="border-2 px-2 py-2 text-sm">Please Enter Movie Director</td>
                             <td className="border-2 px-2 py-2"> <input type ="text" className="border-2 px-2 py-2" defaultValue={director} 
-                            onChange={(e)=>{setAuthor(e.target.value)}}></input></td>
+                            onChange={(e)=>{setDirector(e.target.value)}}></input></td>
                         </tr>
                         <tr>
-                            <td className="border-2 px-2 py-2 text-sm">Please Enter Book Producer</td>
+                            <td className="border-2 px-2 py-2 text-sm">Please Enter Movie Producer</td>
                             <td className="border-2 px-2 py-2"> <input type ="text" className="border-2 px-2 py-2" defaultValue={producer} 
-                            onChange={(e)=>{setPrice(e.target.value)}}></input></td>
+                            onChange={(e)=>{setProducer(e.target.value)}}></input></td>
                         </tr>
                         <tr>
-                            <td className="border-2 px-2 py-2 text-sm">Please Choose Book Category</td>
-                            <td className="border-2 px-2 py-2 text-sm"> <select value={category} onChange={(e)=>{setCat(e.target.value)}}>{categorySelect}</select></td>
+                            <td className="border-2 px-2 py-2 text-sm">Please Choose Movie Category</td>
+                            <td className="border-2 px-2 py-2 text-sm"> <select value={category} onChange={(e)=>{setCategory(e.target.value)}}>{categorySelect}</select></td>
                         </tr>
                     </table>
                 </div>
-                <br/> <input type="button" value="Add Book" className="border-2 p-2" onClick={(addBook)=>{alert("Movie Added")}}></input>
+                {/* <br/> <input type="button" value="Add Movie" className="border-2 p-2" onClick={(addMovie)=>{alert("Movie Added")}}></input> */}
+                <br/> <input type="button" value="Add Movie" className="border-2 p-2" onClick={addMovie}></input>
             </div>
         );
     }

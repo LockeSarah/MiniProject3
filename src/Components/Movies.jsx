@@ -47,7 +47,7 @@ export default function Movies() {
 
     return (
         <div>
-            <h1 className="text-3xl">Future Home of Movies</h1>
+            <h1 className="text-3xl">Home of Movies</h1>
             <h3 className="text-xl">Total Movies: {length}</h3>
             <div id ="tableContainer" className="h-[100vh] px-50 overflow-y-scroll flex justify-center bg-indigo-300">
                 <table className="text-sm">
